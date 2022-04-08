@@ -8,11 +8,13 @@ import Testimonials from "../components/Testimonials";
 export default function Home({ services }) {
   console.log(services);
   return (
-    
     <div className={styles.container}>
-    <Head>
+      <Head>
         <title>Agencia | Inicio</title>
-        <meta name="description" content='Pagina de inicio de la mejor Agencia de Publicidad' />
+        <meta
+          name="description"
+          content="Pagina de inicio de la mejor Agencia de Publicidad"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />

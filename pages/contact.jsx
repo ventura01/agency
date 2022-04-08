@@ -4,7 +4,7 @@ import styles from "../styles/Contact.module.css";
 const contact = () => {
   return (
     <div className={styles.container}>
-      <h1 className={styles.titlee}>GET IN TOUCH</h1>
+      <h1 className={styles.title}>GET IN TOUCH</h1>
       <form className={styles.form} action="POST">
         <input type="text" placeholder="Username" className={styles.inputS} />
         <input type="text" placeholder="Phone" className={styles.inputS} />

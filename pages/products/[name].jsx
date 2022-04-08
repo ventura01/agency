@@ -1,12 +1,20 @@
 import React from "react";
+import Head from "next/head";
 import Link from "next/image";
 import Image from "next/image";
 import styles from "../../styles/Product.module.css";
 import { data } from "../../data";
 
 const Product = ({ product }) => {
+  const pageServ = product.title;
+
   return (
     <div className={styles.container}>
+      <Head>
+        <title>Agencia | {pageServ}</title>
+        <meta name="description" content="Pagina de servicios" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className={styles.cardL}>
         {product.images.map((image) => (
           <div key={image.id} className={styles.imgContainer}>
@@ -24,8 +32,9 @@ const Product = ({ product }) => {
       <div className={styles.cardS}>
         <h1 className={styles.title}>{product.title}</h1>
         <p className={styles.desc}>{product.longDesc}</p>
-        <button className={styles.button}>Contact
-        {/*<Link href="/contact">Contact</Link>*/}
+        <button className={styles.button}>
+          Contact
+          {/*<Link href="/contact">Contact</Link>*/}
         </button>
       </div>
     </div>
