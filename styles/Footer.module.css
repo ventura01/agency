@@ -1,6 +1,7 @@
 .container{
     height: 250px;
-    border-top: 3px solid #000;
+    /* border-top: 3px solid #000; */
+    background-color: lightgray;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -15,10 +16,12 @@
     width: max-content;
 }
 .linkTitle{
-    text-decoration: underline;
+    /* text-decoration: underline; */
+
 }
 .linkText{
     margin-right: 20px;
+    font-size: 35px;
 }
 .cardL{
     flex: 2;
@@ -28,6 +31,8 @@
 }
 .cardItem{
     margin-bottom: 20px;
+    font-weight: 300;
+    color: rgb(43, 43, 43);
 }
 @media screen and (max-width: 480px) {
     .container{
@@ -36,6 +41,9 @@
     }
     .title .linkTitle{
         font-size: 30px;
+    }
+    .linkTitle{
+        text-align: center;
     }
     .cardItem{
         text-align: center;

@@ -8,6 +8,7 @@
     justify-content: space-between;
     font-size: 18px;
     position: relative;
+
 }
 /* .list{} */
 .itemList{
@@ -26,6 +27,9 @@
 @media screen and (max-width: 480px) {
     .container{
         padding: 0 20px;
+        z-index: 999;
+        position: fixed;
+        width: 100%;
     }
     .list{
         display: none;

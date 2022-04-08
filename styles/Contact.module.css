@@ -5,6 +5,7 @@
     align-items: center;
     overflow: hidden;
     position: relative;
+    height: calc(75vh - 50px);
 }
 .form{
     width: 500px;

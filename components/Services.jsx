@@ -12,7 +12,7 @@ const Services = ({ services }) => {
         {services.map((service) => (
           <Link passHref href={`/products/${service.name}`} key={service.id}>
             <div className={styles.service}>
-            <div className={styles.desc}>{service.desc}</div>
+              <div className={styles.desc}>{service.desc}</div>
               <span className={styles.cat}>{service.title}</span>
               <div className={styles.media}>
                 {service.video ? (

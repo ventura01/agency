@@ -12,7 +12,7 @@ const Footer = () => {
           <Link passHref href="/">
             <span className={styles.linkText}>WORK WITH US</span>
           </Link>
-          <Image src="/img/link.png" alt="" width={40} height={40} />
+  {/*<Image src="/img/link.png" alt="" width={40} height={40} />*/}
         </h1>
       </div>
       <div className={styles.cardS}>
