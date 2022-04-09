@@ -5,7 +5,7 @@ import styles from "../styles/Testimonials.module.css";
 
 const Testimonials = () => {
   return (
-    <div className={styles.container}>
+    <section className={styles.container}>
       <h1 className={styles.title}>Testimonials</h1>
       <div className={styles.wrapper}>
         {users.map((user) => (
@@ -18,7 +18,7 @@ const Testimonials = () => {
                 alt=""
                 width={45}
                 height={45}
-                objectFit='cover'
+                objectFit="cover"
                 className={styles.avatar}
               />
               <div className={styles.info}>
@@ -29,7 +29,7 @@ const Testimonials = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

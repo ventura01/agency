@@ -1,7 +1,7 @@
 .container{
     display: flex;
     padding: 50px;
-    /* height: calc(75vh - 50px); */
+    height: calc(75vh - 50px);
 }
 .cardL{
     flex: 2;
@@ -43,7 +43,8 @@
 @media screen and (max-width: 480px) {
     .container{
         flex-direction: column-reverse;
-        padding-top: 50px;
+        padding-top: 20px;
+        height: auto;
     }
     .title{
         font-size: 40px;

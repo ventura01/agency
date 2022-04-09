@@ -3,7 +3,7 @@
     /* border-top: 3px solid #000; */
     background-color: lightgray;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 50px;
     font-size: 18px;
@@ -13,6 +13,7 @@
     color: white;
     font-weight: 400;
     padding: 10px;
+    letter-spacing: 5px;
     width: max-content;
 }
 .linkTitle{
@@ -39,8 +40,12 @@
         height: auto;
         flex-direction: column;
     }
-    .title .linkTitle{
-        font-size: 30px;
+    .title{
+        font-size: 20px;
+    }
+    .linkText{
+        text-align: center;
+        font-size: 20px;
     }
     .linkTitle{
         text-align: center;
