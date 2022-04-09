@@ -1,6 +1,5 @@
 .container{
     height: 250px;
-    /* border-top: 3px solid #000; */
     background-color: lightgray;
     display: flex;
     justify-content: space-between;
@@ -17,8 +16,7 @@
     width: max-content;
 }
 .linkTitle{
-    /* text-decoration: underline; */
-
+    cursor: pointer;
 }
 .linkText{
     margin-right: 20px;

@@ -4,15 +4,17 @@ import Image from "next/image";
 import styles from "../styles/Footer.module.css";
 
 const Footer = () => {
+  const year = new Date().getFullYear();
+
   return (
     <footer className={styles.container}>
       <div className={styles.cardL}>
-        <h1 className={styles.title}>AGENCIA CREATIVA</h1>
+        <h1 className={styles.title}>CREATIVE AGENCY</h1>
         <h1 className={styles.linkTitle}>
-          <Link passHref href="/">
+          <Link passHref href="/contact">
             <span className={styles.linkText}>WORK WITH US</span>
           </Link>
-  {/*<Image src="/img/link.png" alt="" width={40} height={40} />*/}
+          {/*<Image src="/img/link.png" alt="" width={40} height={40} />*/}
         </h1>
       </div>
       <div className={styles.cardS}>
@@ -31,7 +33,7 @@ const Footer = () => {
           <br />
         </div>
         <div className={styles.cardItem}>
-          All rights reeserved. <br />
+          All rights reserved. {year} <br />
         </div>
       </div>
     </footer>

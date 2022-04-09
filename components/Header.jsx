@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/Header.module.css";
 
@@ -14,9 +15,16 @@ const Header = () => {
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae
           nam laboriosam amet a veniam aspernatur inventore totam? Ex dolor quos
           cumque animi autem maxime, veritatis quae temporibus sunt adipisci
-          quas odit quo! Doloribus vitae mollitia fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit. In fugiat veniam placeat vero nobis id asperiores magni laborum fugit magnam, dolorem sint necessitatibus possimus illo eum? Necessitatibus pariatur dolor iure dolorem numquam omnis quod veritatis voluptatibus culpa eum, cumque vitae explicabo deleniti corporis quae autem vel earum eaque illo. Aspernatur?
+          quas odit quo! Doloribus vitae mollitia fugit. Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. In fugiat veniam placeat vero nobis
+          id asperiores magni laborum fugit magnam, dolorem sint necessitatibus
+          possimus illo eum? Necessitatibus pariatur dolor iure dolorem numquam
+          omnis quod veritatis voluptatibus culpa eum, cumque vitae explicabo
+          deleniti corporis quae autem vel earum eaque illo. Aspernatur?
         </p>
-        <button className={styles.button}>More info</button>
+        <Link href="/contact">
+          <a className={styles.button}>More info...</a>
+        </Link>
       </div>
       <div className={styles.card}>
         <Image

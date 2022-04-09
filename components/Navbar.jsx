@@ -4,13 +4,12 @@ import { useState } from "react";
 import styles from "../styles/Navbar.module.css";
 
 const Navbar = () => {
-
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(false);
 
   return (
     <nav className={styles.container}>
       <Link href="/">
-        <a>AGENCIA</a>
+        <a className={styles.logo}>CREATIVE AGENCY</a>
       </Link>
       <ul className={styles.list}>
         <li className={styles.itemList}>
@@ -39,13 +38,17 @@ const Navbar = () => {
           </Link>
         </li>
       </ul>
-      <div className={styles.hamburger} onClick={()=> setOpen(!open)}>
+      <div className={styles.hamburger} onClick={() => setOpen(!open)}>
         <div className={styles.line}></div>
         <div className={styles.line}></div>
         <div className={styles.line}></div>
       </div>
-      <ul className={styles.menu} style={{right: open ? "0px" : "-50vw"}} onClick={()=> setOpen(false)}>
-      <li className={styles.menuItem}>
+      <ul
+        className={styles.menu}
+        style={{ right: open ? "0px" : "-50vw" }}
+        onClick={() => setOpen(false)}
+      >
+        <li className={styles.menuItem}>
           <Link href="/products/design">
             <a>DESIGN</a>
           </Link>

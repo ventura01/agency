@@ -10,7 +10,10 @@
     position: relative;
 
 }
-/* .list{} */
+.logo{
+    letter-spacing: 5px;
+    font-weight: bold;
+}
 .itemList{
     display: inline;
     margin-right: 30px;
